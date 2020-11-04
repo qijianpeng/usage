@@ -6,7 +6,8 @@ using namespace std;
   type get ## repidAtomType ## PropertyValue(void) {                \
     cout<< #propertyName <<endl;                                       \
   }
-
+// `#propertyName` translate to `"propertyName"`
+// `get ## XXX` translate to `getXXX`
 PROPERTY_ACCESSOR_DEFINE(uint64_t, cpu, Uint);
 
 int main(int argc, char const *argv[])
